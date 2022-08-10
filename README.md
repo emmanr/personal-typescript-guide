@@ -60,9 +60,11 @@ axios.get(url).then((response) => {
 ```
 tsc index.ts
 ```
-this will generate an index.js which we will run in node or in the browser. But its a bit cumbersome to run 2 command (converting and running). That's why we installed ts-node. Which convert and run our typescript in the node server.
+this will generate an index.js which we will run in node or in the browser. But its a bit cumbersome to run 2 commands (converting and running). 
+
+
+That's why we installed ts-node. Which convert and run our typescript in the node server.
 ```
-#tsc index.ts
 ts-node index.ts
 ```
 
