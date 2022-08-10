@@ -1,24 +1,6 @@
 <div id="top"></div>
 
 
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -46,8 +28,6 @@
 
 ## Setup
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 ### Installing Typescript compiler
 
 We need a compiler for our typescript to run in the browser or in node environment.
@@ -65,8 +45,8 @@ tsc means typescript compiler
 
 ###### Example
 Testing tsc if it converts to js. (To create a typescript file, we just need to give it a ts file extension)
-```
-# index.ts
+```javascript
+#index.ts
 
 import axios from 'axios';
 
@@ -76,6 +56,17 @@ axios.get(url).then((response) => {
   console.log(response);
 });
 ```
+
+```
+tsc index.ts
+```
+this will generate an index.js which we will run in node or in the browser. But its a bit cumbersome to run 2 command (converting and running). That's why we installed ts-node. Which convert and run our typescript in the node server.
+```
+#tsc index.ts
+ts-node index.ts
+```
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
