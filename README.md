@@ -61,8 +61,8 @@ We need a compiler for our typescript to run in the browser or in node environme
 ```
 npm install -g typescript ts-node
 ```
-typescript: will convert our ts to js
-ts-node: will convert our ts to js and automatically run the code in node
+* typescript: will convert our ts to js
+* ts-node: will convert our ts to js and automatically run the code in node
 
 To check if we successfully install typescript:
 ```
