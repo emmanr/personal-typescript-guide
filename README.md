@@ -195,7 +195,7 @@ If Typescript can not determine the type of our variable or function, the type w
 
 ## When to use Type Annotations
 
-1. Function that returns the `any` type
+- :one: Function that returns the `any` type
 
 ```javascript
 const json = '{"x": 10, "y": 20}';
@@ -218,7 +218,7 @@ const coordinates: { x: number; y: number } = JSON.parse(json);
 console.log(coordinates); // {x: 10, y: 20}
 ```
 
-2. When we declare a variable on one line and initialize it later
+- :two: When we declare a variable on one line and initialize it later
 
 ```javascript
 let words = ['pet', 'food', 'colors'];
