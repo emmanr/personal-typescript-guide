@@ -218,4 +218,21 @@ const coordinates: { x: number; y: number } = JSON.parse(json);
 console.log(coordinates); // {x: 10, y: 20}
 ```
 
+2. When we declare a variable on one line and initialize it later
+
+```javascript
+let words = ['pet', 'food', 'colors'];
+let foundWord: boolean;
+
+for (let i =0; i < words.length; i++) {
+  if (words[i] === 'food') {
+    foundWord = true;
+  }
+}
+```
+
+> In above example, 
+> if we know it's boolean, best way is to first assign it to false - `let foundWord = false;`
+> We just want to show - When we declare a variable and initialize it later
+
 <p align="right">(<a href="#top">back to top</a>)</p>
