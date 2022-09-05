@@ -32,4 +32,9 @@ export default function () {
     console.log(i);
     return i + 10;
   };
+
+  const logAndReturnNumberInferenceArgument = (i: number): number => {
+    console.log(i);
+    return i + 10;
+  };
 }

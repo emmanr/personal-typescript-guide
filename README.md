@@ -85,46 +85,32 @@ Type Annotations is code we add to tell Typescript what type a variable should b
 ###### Examples:
 
 ```
+#index.ts
 let apples: number = 5;
 let fruit: string = 'apple';
 
 let nothingMuch: null = null;
 let nothing: undefined = undefined;
-```
 
-###### Built in objects:
-
-```
+// Built in objects:
 const now: Date = new Date();
-```
 
-###### Array
-
-```
+// Array
 const colors: string[] = ['red', 'blue', 'green'];
 const peopleAges: number[] = [22, 60, 15, 5];
 const status: boolean[] = [true, false, false];
-```
 
-###### Class instance
-
-```
+// Class instance
 class Car {}
 let car: Car = new Car();
-```
 
-###### Object literals
-
-```
+// Object literals
 const point: { x: number; y: number } = {
   x: 10,
   y: 29,
 };
-```
 
-###### Function
-
-```
+// Functions
 const logNumber: (i: number) => void = (i: number) => {
   console.log(i);
 };
@@ -133,6 +119,18 @@ const logAndReturnNumber: (i: number) => number = (i) => {
   console.log(i);
   return i + 10;
 };
+
+const logAndReturnNumberInferenceArgument = (i: number): number => {
+  console.log(i);
+  return i + 10;
+};
 ```
+
+<details>
+  <summary>Why do we have to write "i: number" in the function declaration. Why 2 times the same?</summary>
+  <p>In terms of why you put "i: number" twice, it's because it's not the same i each time. The second is the actual argument or parameter to the function. The first is a type annotation of what type of argument will be passed as a parameter.</p>
+  <p>For example, they could be different letters:</p>
+  ```const logNumber: (z: number) => void = (i: number) => {}```
+</details>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
