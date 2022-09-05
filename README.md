@@ -33,7 +33,7 @@
   </ol>
 </details>
 
-## Setup
+## :zap: Setup
 
 ### Installing Typescript compiler
 
