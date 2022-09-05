@@ -250,6 +250,23 @@ If Typescript can not determine the type of our variable or function, the type w
 
 <details>
   <summary>3. Variable whose type cannot be inferred correctly (When Inference Doesn't Work)</summary>
+
+  <p>
+    :grey_exclamation: For example we declare a variable that has a default boolean value, but later on, we want to change it's value to a number or boolean again.
+  </p>
+
+  ```javascript
+    let numbers = [10, 25, 50];
+    let greaterThanTwenty: boolean | number = false; // could be boolean or a number
+
+    for (let i = 0; i < numbers.length; i++) {
+      if (numbers[i] > 20) {
+        greaterThanTwenty = numbers[i];
+      }
+    }
+  ```
+
+  > In above example, our variable __greaterThanTwenty__ can accept 2 types, boolean or a string
 </details>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
