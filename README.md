@@ -29,6 +29,7 @@
     <li><a href="#setup">Setup</a></li>
     <li><a href="#type-annotations">Type Annotations</a></li>
     <li><a href="#type-inference">Type Inference</a></li>
+    <li><a href="#when-to-use-type-annotations">When to use Type Annotations</a></li>
   </ol>
 </details>
 
@@ -191,5 +192,27 @@ age = 'something'; // will have an error -- Type "string" is not assignable to t
 If Typescript can not determine the type of our variable or function, the type will become `any`.
 
 > Must avoid variables with type `any` at all costs
+
+## When to use Type Annotations
+
+<h3>When to use Annotations</h3>
+
+1. Function that returns the `any` type
+
+```javascript
+const json = '{"x": 10, "y": 20}';
+const coordinates = JSON.parse(json);
+console.log(coordinates); // {x: 10, y: 20}
+
+coordinates.somethingsomething;
+// will not cause an error, because this variable is in type "any"
+```
+
+> When assigning a type in a variable like string, numbers, etc., typescript help us see all available method or properties for that specific variables
+
+```javascript
+let myName: string = 'emman';
+// by typing "myName", typescript will suggest all available properties for string like ".toLowerCase"
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
