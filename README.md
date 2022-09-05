@@ -203,44 +203,53 @@ If Typescript can not determine the type of our variable or function, the type w
 
 ## When to use Type Annotations
 
-1. Function that returns the `any` type
+<details>
+  <summary>1. Function that returns the `any` type</summary>
 
-```javascript
-const json = '{"x": 10, "y": 20}';
-const coordinates = JSON.parse(json);
-console.log(coordinates); // {x: 10, y: 20}
+  ```javascript
+  const json = '{"x": 10, "y": 20}';
+  const coordinates = JSON.parse(json);
+  console.log(coordinates); // {x: 10, y: 20}
 
-coordinates.somethingsomething; // will not cause an error, because this variable is in type "any"
-```
+  coordinates.somethingsomething; // will not cause an error, because this variable is in type "any"
+  ```
 
-> When assigning a type in a variable like string, numbers, etc.,
-> typescript help us see all available method or properties for that specific variables
+  > When assigning a type in a variable like string, numbers, etc.,
+  > typescript help us see all available method or properties for that specific variables
 
-```javascript
-let myName: string = 'emman';
-// by typing "myName", typescript will suggest all available properties for string like ".toLowerCase"
+  ```javascript
+  let myName: string = 'emman';
+  // by typing "myName", typescript will suggest all available properties for string like ".toLowerCase"
 
-// For coordinates example above, adding type notation:
-const json = '{"x": 10, "y": 20}';
-const coordinates: { x: number; y: number } = JSON.parse(json);
-console.log(coordinates); // {x: 10, y: 20}
-```
+  // For coordinates example above, adding type notation:
+  const json = '{"x": 10, "y": 20}';
+  const coordinates: { x: number; y: number } = JSON.parse(json);
+  console.log(coordinates); // {x: 10, y: 20}
+  ```
+</details>
 
-2. When we declare a variable on one line and initialize it later
+<details>
+  <summary>2. When we declare a variable on one line and initialize it later</summary>
 
-```javascript
-let words = ['pet', 'food', 'colors'];
-let foundWord: boolean;
+  ```javascript
+  let words = ['pet', 'food', 'colors'];
+  let foundWord: boolean;
+  // let foundWord = false;
 
-for (let i =0; i < words.length; i++) {
-  if (words[i] === 'food') {
-    foundWord = true;
+  for (let i =0; i < words.length; i++) {
+    if (words[i] === 'food') {
+      foundWord = true;
+    }
   }
-}
-```
+  ```
 
-> In above example, 
-> if we know it's boolean, best way is to first assign it to false - `let foundWord = false;`
-> We just want to show - When we declare a variable and initialize it later
+  > In above example,
+  > if we know the variable would be boolean, best way is to assign it to "false"
+  > We just want to show - When we declare a variable and initialize it later
+</details>
+
+<details>
+  <summary>3. Variable whose type cannot be inferred correctly (When Inference Doesn't Work)</summary>
+</details>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
