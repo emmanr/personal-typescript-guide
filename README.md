@@ -10,7 +10,11 @@
   <h3 align="center">Typescript Documentation</h3>
 
   <p align="center">
-    From setting up to using typescript.
+    Typescript add optional typing to Javascript. It won't run on it's own, we need a compiler to run typescript.
+  </p>
+
+  <p align="center">
+    Typescript help us avoid assigning different value is our variable or functions, it also help us see any property available for our variables.
   </p>
 </div>
 
@@ -20,7 +24,7 @@
   <ol>
     <li><a href="#setup">Setup</a></li>
     <li><a href="#type-annotations">Type Annotations</a></li>
-    <li><a href="#inference">Inference</a></li>
+    <li><a href="#type-inference">Type Inference</a></li>
   </ol>
 </details>
 
@@ -167,14 +171,21 @@ const logNumber = (i: number): void => {};
 
 </details>
 
-## Inference
+## Type Inference
 
 Inference is that Typescript will automatically assign a type to our variable or functions.
 
+###### Examples:
+
+```javascript
+let pet = 'Dog'; // Typescript will automatically assign it with "string" type
+let age = '30'; // automatically type number
+
+age = 'something'; // will have an error -- Type "string" is not assignable to type "number"
+```
+
 If Typescript can not determine the type of our variable or function, the type will become `any`.
 
-<h5>Type: Any<h5>
-- Means TS has no idea what this is - can't check for correct property references
-- Must avoid variables with `any` at all costs
+> Must avoid variables with type `any` at all costs
 
 <p align="right">(<a href="#top">back to top</a>)</p>
