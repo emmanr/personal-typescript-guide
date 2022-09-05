@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Typescript Documentation</h3>
@@ -195,7 +195,7 @@ If Typescript can not determine the type of our variable or function, the type w
 
 ## When to use Type Annotations
 
-- :one: Function that returns the `any` type
+1. Function that returns the `any` type
 
 ```javascript
 const json = '{"x": 10, "y": 20}';
@@ -218,7 +218,7 @@ const coordinates: { x: number; y: number } = JSON.parse(json);
 console.log(coordinates); // {x: 10, y: 20}
 ```
 
-- :two: When we declare a variable on one line and initialize it later
+2. When we declare a variable on one line and initialize it later
 
 ```javascript
 let words = ['pet', 'food', 'colors'];
