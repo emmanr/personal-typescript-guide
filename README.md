@@ -10,11 +10,15 @@
   <h3 align="center">Typescript Documentation</h3>
 
   <p align="center">
-    Typescript add optional typing to Javascript. It won't run on it's own, we need a compiler to run typescript.
+    Typescript is Javascript, it adds static typing to Javascript.
   </p>
 
   <p align="center">
-    Typescript help us avoid assigning different value is our variable or functions, it also help us see any property available for our variables.
+    Typescript need a compiler to run on top of Javascript.
+  </p>
+
+  <p align="center">
+    Typescript help us avoid assigning different values in our variable or functions, and suggests what type of variable we can use, it also help us see any property available for our variables.
   </p>
 </div>
 
