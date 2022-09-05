@@ -84,8 +84,7 @@ Type Annotations is code we add to tell Typescript what type a variable should b
 
 ###### Examples:
 
-```
-#index.ts
+```javascript
 let apples: number = 5;
 let fruit: string = 'apple';
 
@@ -105,7 +104,7 @@ class Car {}
 let car: Car = new Car();
 
 // Object literals
-const point: { x: number; y: number } = {
+const point: { x: number, y: number } = {
   x: 10,
   y: 29,
 };
@@ -127,10 +126,50 @@ const logAndReturnNumberInferenceArgument = (i: number): number => {
 ```
 
 <details>
-  <summary>Why do we have to write "i: number" in the function declaration. Why 2 times the same?</summary>
-  <p>In terms of why you put "i: number" twice, it's because it's not the same i each time. The second is the actual argument or parameter to the function. The first is a type annotation of what type of argument will be passed as a parameter.</p>
-  <p>For example, they could be different letters:</p>
-  ```const logNumber: (z: number) => void = (i: number) => {}```
+  <summary><h3>Why do we have to write "i: number" in the function declaration. Why 2 times the same?</h3></summary>
+
+  <p>
+    In terms of why you put "i: number" twice, it's because it's not the same i each time. The second is the actual argument or parameter to the function. The first is a type annotation of what type of argument will be passed as a parameter.
+  </p>
+
+  <p>
+    For example, they could be different letters:
+  </p>
+
+```javascript
+const logNumber: (z: number) => void = (i: number) => {};
+```
+
+<p>Here note that I've used z for the first one, i for the second. The first (z) is the annotation of the type; the i is the actual variable. You could leave the i without a type annotation:</p>
+
+```javascript
+const logNumber: (z: number) => void = (i) => {};
+```
+
+<p>Here the type of i will be inferred to be number. But note that you wouldn't want to do this:</p>
+
+```javascript
+const logNumber: (z) => void = (i: number) => {};
+```
+
+<p>Here I've left z without a type annotation but put back in the annotation for i. What this would do is give you a type warning saying that z is implicitly of the "any" type.</p>
+
+<p>The same exact thing would apply if you replace my z with the i in the original example.</p>
+
+```javascript
+const logNumber: (i) => void = (i: number) => {};
+```
+
+<p>Here I replaced my z with the i and you would get that same type warning. That shows why you have two places where you type annotation with number.</p>
+
+<p>This isn't to say you must have both. You can frame the situation where you don't have to use two:</p>
+
+```javascript
+const logNumber = (i: number): void => {};
+```
+
+<p>There, however, you are not fully annotating the function.</p>
+
 </details>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
