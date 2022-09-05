@@ -214,9 +214,10 @@ coordinates.somethingsomething; // will not cause an error, because this variabl
 let myName: string = 'emman';
 // by typing "myName", typescript will suggest all available properties for string like ".toLowerCase"
 
-// For coordinates example above, the add type notation:
+// For coordinates example above, adding type notation:
 const json = '{"x": 10, "y": 20}';
 const coordinates: { x: number; y: number } = JSON.parse(json);
+console.log(coordinates); // {x: 10, y: 20}
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
