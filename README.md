@@ -74,17 +74,15 @@ ts-node index.ts
 
 ## Type Annotations
 
-Type Annotations is code we add to tell Typescript what type a variable should be.
+Type Annotations is a code(type) we add to tell Typescript what type a variable should be.
 
-"I am string" -> string
-
-22 -> number
-
-"March 22, 1992" -> Date
+- "I am string" -> string
+- 22 -> number
+- "March 22, 1992" -> Date
 
 ###### Examples:
 
-```javascript
+```typescript
 let apples: number = 5;
 let fruit: string = 'apple';
 
@@ -104,7 +102,7 @@ class Car {}
 let car: Car = new Car();
 
 // Object literals
-const point: { x: number, y: number } = {
+const point: { x: number; y: number } = {
   x: 10,
   y: 29,
 };
