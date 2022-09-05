@@ -125,10 +125,9 @@ const logAndReturnNumberInferenceArgument = (i: number): number => {
 
 <details>
   <summary><h3>Why do we have to write "i: number" in the function declaration. Why 2 times the same?</h3></summary>
-<div style="padding-left: 100px">
 
   <p>
-    In terms of why you put "i: number" twice, it's because it's not the same i each time. The second is the actual argument or parameter to the function. The first is a type annotation of what type of argument will be passed as a parameter.
+    In terms of why you put `"i: number"` twice, it's because it's not the same i each time. The second is the actual argument or parameter to the function. The first is a type annotation of what type of argument will be passed as a parameter.
   </p>
 
   <p>
@@ -168,7 +167,6 @@ const logNumber = (i: number): void => {};
 ```
 
 <p>There, however, you are not fully annotating the function.</p>
-</div>
 
 </details>
 
