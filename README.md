@@ -204,15 +204,19 @@ const json = '{"x": 10, "y": 20}';
 const coordinates = JSON.parse(json);
 console.log(coordinates); // {x: 10, y: 20}
 
-coordinates.somethingsomething;
-// will not cause an error, because this variable is in type "any"
+coordinates.somethingsomething; // will not cause an error, because this variable is in type "any"
 ```
 
-> When assigning a type in a variable like string, numbers, etc., typescript help us see all available method or properties for that specific variables
+> When assigning a type in a variable like string, numbers, etc.,
+> typescript help us see all available method or properties for that specific variables
 
 ```javascript
 let myName: string = 'emman';
 // by typing "myName", typescript will suggest all available properties for string like ".toLowerCase"
+
+// For coordinates example above, the add type notation:
+const json = '{"x": 10, "y": 20}';
+const coordinates: { x: number; y: number } = JSON.parse(json);
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
