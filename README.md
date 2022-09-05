@@ -124,7 +124,7 @@ const logAndReturnNumberInferenceArgument = (i: number): number => {
 ```
 
 <details>
-  <summary><h3>Why do we have to write "i: number" in the function declaration. Why 2 times the same?</h3></summary>
+  <summary><h3>Why do we have to write `"i: number"` in the function declaration. Why 2 times the same?</h3></summary>
 
   <p>
     In terms of why you put `"i: number"` twice, it's because it's not the same i each time. The second is the actual argument or parameter to the function. The first is a type annotation of what type of argument will be passed as a parameter.
