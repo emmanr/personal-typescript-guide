@@ -195,8 +195,6 @@ If Typescript can not determine the type of our variable or function, the type w
 
 ## When to use Type Annotations
 
-<h3>When to use Annotations</h3>
-
 1. Function that returns the `any` type
 
 ```javascript
