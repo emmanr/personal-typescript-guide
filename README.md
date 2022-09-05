@@ -20,6 +20,7 @@
   <ol>
     <li><a href="#setup">Setup</a></li>
     <li><a href="#type-annotations">Type Annotations</a></li>
+    <li><a href="#inference">Inference</a></li>
   </ol>
 </details>
 
@@ -124,15 +125,11 @@ const logAndReturnNumberInferenceArgument = (i: number): number => {
 ```
 
 <details>
-  <summary><h3>Why do we have to write `"i: number"` in the function declaration. Why 2 times the same?</h3></summary>
+  <summary><h5>Why do we have to write "i: number" in the function declaration. Why 2 times the same?</h5></summary>
 
-  <p>
-    In terms of why you put `"i: number"` twice, it's because it's not the same i each time. The second is the actual argument or parameter to the function. The first is a type annotation of what type of argument will be passed as a parameter.
-  </p>
+In terms of why you put `i: number` twice, it's because it's not the same i each time. The second is the actual argument or parameter to the function. The first is a type annotation of what type of argument will be passed as a parameter.
 
-  <p>
-    For example, they could be different letters:
-  </p>
+For example, they could be different letters:
 
 ```javascript
 const logNumber: (z: number) => void = (i: number) => {};
@@ -169,5 +166,15 @@ const logNumber = (i: number): void => {};
 <p>There, however, you are not fully annotating the function.</p>
 
 </details>
+
+## Inference
+
+Inference is that Typescript will automatically assign a type to our variable or functions.
+
+If Typescript can not determine the type of our variable or function, the type will become `any`.
+
+<h5>Type: Any<h5>
+- Means TS has no idea what this is - can't check for correct property references
+- Must avoid variables with `any` at all costs
 
 <p align="right">(<a href="#top">back to top</a>)</p>
