@@ -84,6 +84,10 @@ ts-node index.ts
 
 ## Type Annotations
 
+<div align="center">
+  <img src="images/type-annotations.png" alt="Type Annotations" width="462" height="176">
+</div>
+
 Type Annotations is a code(type) we add to tell Typescript what type a variable should be.
 
 - "I am string" -> string
@@ -177,6 +181,10 @@ const logNumber = (i: number): void => {};
 </details>
 
 ## Type Inference
+
+<div align="center">
+  <img src="images/type-inference.png" alt="Type Inference" width="421" height="154">
+</div>
 
 Inference is that Typescript will automatically assign a type to our variable or functions.
 
