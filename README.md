@@ -521,6 +521,11 @@ This will allow us to make sure what type of value to pass in an array.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+
+<div align="center">
+  <img src="images/type-interface.png" alt="Type Interface">
+</div>
+
 ## Interfaces
 
 Creating a new custom type that we will define, just the same way that we have a string, numbers, etc.
@@ -599,7 +604,7 @@ printVehicle(oldToyota);
 // we will get an error that says "'broken' does not exist on type 'Vehicle'"
 ```
 
-By doing the above example, `printVehicle` function should meet the specification provided by the `Vehicle` type, it must accept an object with a <b>name as a string</b>, <b>year as a number</b>, <b>broken as a boolean</b>.
+With the above example, `printVehicle` function should meet the specification provided by the `Vehicle` type, it must accept an object with a <b>name as a string</b>, <b>year as a number</b>, <b>broken as a boolean</b>.
 
 #### Naming of Interface
 
