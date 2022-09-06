@@ -369,7 +369,7 @@ Typescript won't do inference in a function argument, instead it will assign typ
 ## Destructuring with Annotations
 
 <div align="center">
-  <img src="images/destructure.gif" alt="Destructure" width="462">
+  <img src="images/destructure.gif" alt="Destructure" width="830" height="363">
 </div>
 
 ```typescript
