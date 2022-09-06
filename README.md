@@ -380,4 +380,21 @@ logWeather(currentWeather);
 
 ```
 
+#### With Objects
+
+```typescript
+const profile = {
+  name: 'Alex',
+  age: 20,
+  coords: {
+    lat: 0,
+    lang: 15
+  },
+  setAge(age: number): void {
+    this.age = age;
+  }
+}
+
+```
+
 <p align="right">(<a href="#top">back to top</a>)</p>
