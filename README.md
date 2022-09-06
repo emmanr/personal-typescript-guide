@@ -583,7 +583,25 @@ const printVehicle = (vehicle: Vehicle): void => {
   console.log(`Year: ${vehicle.year}`);
   console.log(`Broken: ${vehicle.broken}`);
 };
+
+printVehicle(oldCivic);
+
+// BAD EXAMPLE
+const oldToyota = {
+  name: 'corolla',
+  year: 1997,
+  // broken: false,
+};
+
+printVehicle(oldToyota);
+
+// since oldToyota won't pass the `broken` key-value
+// we will get an error that says "'broken' does not exist on type 'Vehicle'"
 ```
+
+By doing the above example, `printVehicle` function should meet the specification provided by the `Vehicle` type, by passing all necessary key-values and follow the types given.
+
+#### Naming of Interface
 
 > Should follow a naming convention for Interfaces, most likely you will discussed it with your teams to avoid clashing of names. There is no standard for the naming conventions by the language itself.
 

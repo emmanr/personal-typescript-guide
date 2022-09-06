@@ -5,7 +5,6 @@ todoInterface();
 interface Vehicle {
   name: string;
   year: number;
-  broken: boolean;
 }
 
 const oldCivic = {
