@@ -365,14 +365,16 @@ Typescript won't do inference in a function argument, instead it will assign typ
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-## Destructuring with Annotations
-
 <div align="center">
   <img src="images/destructure.gif" alt="Destructure" width="830" height="363">
 </div>
 
+## Destructuring with Annotations
+
+###### Example
+
 ```typescript
+// with a Function
 const currentWeather = {
   date: new Date(),
   weather: 'Sunny'
@@ -385,11 +387,7 @@ const logWeather = ({date, weather}: { date: Date, weather: string}): void => {
 
 logWeather(currentWeather);
 
-```
-
-#### With Objects
-
-```typescript
+// with Object
 const profile = {
   name: 'Alex',
   age: 20,
