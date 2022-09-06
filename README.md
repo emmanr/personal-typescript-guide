@@ -82,6 +82,8 @@ That's why we installed ts-node. Which convert and run our typescript in the nod
 ts-node index.ts
 ```
 
+<br/>
+
 ## Type Annotations
 
 <div align="center">
@@ -179,6 +181,8 @@ const logNumber = (i: number): void => {};
 <p>There, however, you are not fully annotating the function.</p>
 
 </details>
+
+<br/>
 
 ## Type Inference
 
