@@ -449,11 +449,11 @@ const carsByMake2: string[][] = [
 ];
 ```
 
-It's always better to use Inference when declaring a variable.
+<p>:grey_exclamation: It's always better to use Inference when declaring a variable.</p>
 
-Hovering over a variable(inference) in your IDE, will show a descriptive annotation about it.
+<p>:grey_exclamation: Hovering over a variable(inference) in your IDE, will show a descriptive annotation about it.</p>
 
-TS can prevent us from adding incompatible values to the array.
+<p>:grey_exclamation: TS can prevent us from adding incompatible values to the array.</p>
 
 ```typescript
 const carMakers = ['ford', 'toyota', 'honda']; // string
@@ -462,7 +462,7 @@ carMakers.push(200);
 // Typescript will give us an error that carMakers array only accept's string
 ```
 
-Can get help with map, forEach, reduce function by suggesting properties or method for specific `type`
+<p>:grey_exclamation: Can get help with map, forEach, reduce and other same functions by suggesting properties or method for specific type</p>
 
 ```typescript
 const carMakers = ['ford', 'toyota', 'honda']; // string
