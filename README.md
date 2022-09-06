@@ -180,6 +180,9 @@ const logNumber = (i: number): void => {};
 
 </details>
 
+<br/>
+<br/>
+
 ## Type Inference
 
 <div align="center">
@@ -272,6 +275,9 @@ If Typescript can not determine the type of our variable or function, the type w
     }
   ```
 </details>
+
+<br/>
+<br/>
 
 ## Functions Annotation and Inference
 
