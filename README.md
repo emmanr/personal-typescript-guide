@@ -32,6 +32,7 @@
     <li><a href="#functions-annotation-and-inference">Functions Annotation and Inference</a></li>
     <li><a href="#destructuring-with-annotations">Destructuring with Annotations</a></li>
     <li><a href="#typed-arrays">Typed Arrays</a></li>
+    <li><a href="#tuples-in-typescript">Tuples in Typescript</a></li>
   </ol>
 </details>
 
@@ -480,5 +481,13 @@ carMakers.map((car: string): string => {
 <h5>:interrobang: Where to use typed arrays?</h5>
 
 > Any time we need to represent a collection of records with some arbitrary sort order.
+
+<br/>
+<br/>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Tuples in Typescript
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
