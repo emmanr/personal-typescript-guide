@@ -425,11 +425,15 @@ Arrays where each element is some consistent type of value.
 const carMakers = ['ford', 'toyota', 'honda']; // string[]
 const carLists = []; // any[]
 const birthdays = [new Date(), new Date()]; // Date[]
+const holidays = [new Date(), 'January 22, 2030']; // (string | Date)[]
+
+// some Inference 2d arrays
 const carsByMake = [
   ['f150'],
   ['corolla', 'vios'],
   ['camaro']
 ]; // string[][]
+
 const some2DArray = [
   ['test'],
   [3, 4],
