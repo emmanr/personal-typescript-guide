@@ -205,6 +205,8 @@ If Typescript can not determine the type of our variable or function, the type w
 
 > Must avoid variables with type `any` at all costs
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <br/>
 <br/>
 
@@ -280,6 +282,8 @@ If Typescript can not determine the type of our variable or function, the type w
   ```
 </details>
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <br/>
 <br/>
 
@@ -318,11 +322,11 @@ Code we add to tell Typescript what type of arguments a function will receive an
 
 For difference between `void` and `never`:
 
-Void - it returns void which is undefined
+<b>Void</b> - it return void which is undefined
 
 > The intent of void is that a function's return value will not be observed.
 
-Never - it never returns anything
+<b>Never</b> - it never returns anything
 
 
 ### Type Inference for Functions
