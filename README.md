@@ -295,6 +295,14 @@ Code we add to tell Typescript what type of arguments a function will receive an
   const add = (a: number, b: number): number => {
     return a + b;
   }
+
+  const multiply = function(a: number, b:number): number {
+    return a * b;
+  }
+
+  function divide(a: number, b:number): number {
+    return a / b;
+  }
 ```
 
 ### Type Inference for Functions
@@ -325,6 +333,6 @@ Typescript will automatically assign a return `type` base in what we return.
 
 If we omit the return, then the type will be `void`.
 
-Typescript won't do inference in a function argument, instead it will assign type `any`.
+Typescript won't do inference in a function argument, instead it will assign type `any` for the argument.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
