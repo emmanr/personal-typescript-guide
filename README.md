@@ -186,7 +186,7 @@ const logNumber = (i: number): void => {};
   <img src="images/type-inference.png" alt="Type Inference" width="421" height="154">
 </div>
 
-Inference is that Typescript will automatically assign a type to our variable or functions.
+Inference is that Typescript will automatically assign a type to our variable.
 
 ###### Examples:
 
@@ -204,7 +204,7 @@ If Typescript can not determine the type of our variable or function, the type w
 ## When to use Type Annotations
 
 <details>
-  <summary>1. Function that returns the `any` type</summary>
+  <summary>1. When a function return's the __any__ type</summary>
 
   ```javascript
   const json = '{"x": 10, "y": 20}';
@@ -252,7 +252,7 @@ If Typescript can not determine the type of our variable or function, the type w
   <summary>3. Variable whose type cannot be inferred correctly (When Inference Doesn't Work)</summary>
 
   <p>
-    :grey_exclamation: For example we declare a variable that has a default boolean value, but later on, we want to change it's value to a number or boolean again.
+    For example we declare a variable that has a default boolean value, but later on, we want to change it's value to a number or boolean again.
   </p>
 
   ```javascript
@@ -265,8 +265,6 @@ If Typescript can not determine the type of our variable or function, the type w
       }
     }
   ```
-
-  > In above example, our variable __greaterThanTwenty__ can accept 2 types, boolean or a string
 </details>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
