@@ -31,6 +31,7 @@
     <li><a href="#when-to-use-type-annotations">When to use Type Annotations</a></li>
     <li><a href="#functions-annotation-and-inference">Functions Annotation and Inference</a></li>
     <li><a href="#destructuring-with-annotations">Destructuring with Annotations</a></li>
+    <li><a href="#typed-arrays">Typed Arrays</a></li>
   </ol>
 </details>
 
@@ -371,7 +372,7 @@ Typescript won't do inference in a function argument, instead it will assign typ
 
 ## Destructuring with Annotations
 
-###### Example
+###### Examples
 
 ```typescript
 // with a Function
@@ -410,5 +411,45 @@ const {
 
 <br/>
 <br/>
+
+## Typed Arrays
+
+Arrays where each element is some consistent type of value.
+
+###### Examples
+
+```typescript
+
+// Inference
+const carMakers = ['ford', 'toyota', 'honda']; // string[]
+const carLists = []; // any[]
+const birthdays = [new Date(), new Date()]; // Date[]
+const carsByMake = [
+  ['f150'],
+  ['corolla', 'vios'],
+  ['camaro']
+]; // string[][]
+const some2DArray = [
+  ['test'],
+  [3, 4],
+  [{
+    pet: 'Dog'
+  }]
+];
+// const some2DArray: (string[] | number[] | { name: string; }[])[]
+
+// Annotations
+const carMakers2: string[] = ['chevy', 'bmw', 'jeep'];
+const carLists2: string[] = [];
+const carsByMake2: string[][] = [
+  ['f150'],
+  ['corolla', 'vios'],
+  ['camaro']
+];
+```
+
+> It's always better to use Inference when declaring a variable
+
+> Hovering over a variable(inference) in your IDE, will show a descriptive annotation about it
 
 <p align="right">(<a href="#top">back to top</a>)</p>
