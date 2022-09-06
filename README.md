@@ -204,7 +204,7 @@ If Typescript can not determine the type of our variable or function, the type w
 ## When to use Type Annotations
 
 <details>
-  <summary>1. When a function return's the __any__ type</summary>
+  <summary>1. When a function return's the <i>any</i> type</summary>
 
   ```javascript
   const json = '{"x": 10, "y": 20}';
