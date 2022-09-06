@@ -363,7 +363,14 @@ Typescript won't do inference in a function argument, instead it will assign typ
 <br/>
 <br/>
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
 ## Destructuring with Annotations
+
+<div align="center">
+  <img src="images/destructure.gif" alt="Destructure" width="462">
+</div>
 
 ```typescript
 const currentWeather = {
@@ -395,6 +402,15 @@ const profile = {
   }
 }
 
+const { age }: { age: number } = profile;
+const {
+  coords: { lat, lang }
+}: {
+  coords: { lat: number; lang: number }
+}  = profile;
 ```
+
+<br/>
+<br/>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
