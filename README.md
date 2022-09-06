@@ -519,6 +519,8 @@ This will allow us to make sure what type of value to pass in an array.
 <br/>
 <br/>
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Interfaces
 
 Creating a new custom type that we will define, just the same way that we have a string, numbers, etc.
@@ -558,5 +560,35 @@ We will be creating a long list of notation. Something like:
   broken: boolean;
 })
 ```
+
+And if we reuse our `printVehicle` function above, we will be doing a lot of duplicate code.
+
+The solution would be `Interface`.
+
+```typescript
+interface Vehicle {
+  name: string;
+  year: number;
+  broken: boolean;
+}
+
+const oldCivic = {
+  name: 'civic',
+  year: 2000,
+  broken: false,
+};
+
+const printVehicle = (vehicle: Vehicle): void => {
+  console.log(`Name: ${vehicle.name}`);
+  console.log(`Year: ${vehicle.year}`);
+  console.log(`Broken: ${vehicle.broken}`);
+};
+```
+
+> Should follow a naming convention for Interfaces, most likely you will discussed it with your teams to avoid clashing of names. There is no standard for the naming conventions by the language itself.
+
+> Make it Generic, CamelCase
+
+> Should not have I or Interface in the name or any other way of identifying it as an interface.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
