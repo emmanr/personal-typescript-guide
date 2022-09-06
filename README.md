@@ -303,7 +303,26 @@ Code we add to tell Typescript what type of arguments a function will receive an
   function divide(a: number, b:number): number {
     return a / b;
   }
+
+  const nothing = (message: string): void => {
+    console.log(message);
+
+    // return undefined;
+    // return null;
+    // return 'something';
+  }
+
+  const throwError = (message: string): never => {
+    throw new Error(message);
+  }
 ```
+
+For difference between `void` and `never`:
+
+Void - it returns void (only null or undefined)
+
+Never - it never returns anything
+
 
 ### Type Inference for Functions
 
