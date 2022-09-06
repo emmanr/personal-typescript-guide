@@ -477,4 +477,8 @@ carMakers.map((car: string): string => {
 });
 ```
 
+<h5>:interrobang: Where to use typed arrays?</h5>
+
+> Any time we need to represent a collection of records with some arbitrary sort order.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
