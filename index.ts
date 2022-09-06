@@ -2,7 +2,7 @@ import todoInterface from './codes/todo-interface';
 
 todoInterface();
 
-const carsByMake = [
-  [1, 2],
-  [3, 4],
-];
+const carMakers = ['bmw', 'toyota', 'ford'];
+const corolla = carMakers[1];
+
+console.log(carMakers, corolla);

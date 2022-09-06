@@ -412,6 +412,8 @@ const {
 <br/>
 <br/>
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## Typed Arrays
 
 Arrays where each element is some consistent type of value.
@@ -419,7 +421,6 @@ Arrays where each element is some consistent type of value.
 ###### Examples
 
 ```typescript
-
 // Inference
 const carMakers = ['ford', 'toyota', 'honda']; // string[]
 const carLists = []; // any[]
@@ -448,8 +449,26 @@ const carsByMake2: string[][] = [
 ];
 ```
 
-> It's always better to use Inference when declaring a variable
+It's always better to use Inference when declaring a variable.
 
-> Hovering over a variable(inference) in your IDE, will show a descriptive annotation about it
+Hovering over a variable(inference) in your IDE, will show a descriptive annotation about it.
+
+TS can prevent us from adding incompatible values to the array.
+
+```typescript
+const carMakers = ['ford', 'toyota', 'honda']; // string
+
+carMakers.push(200); // Typescript will give us an error that carMakers array only accept's string
+```
+
+Can get help with map, forEach, reduce function by suggesting properties or method for specific `type`
+
+```typescript
+const carMakers = ['ford', 'toyota', 'honda']; // string
+
+carMakers.map((car: string): string => {
+  return car.toLowerCase();
+});
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
