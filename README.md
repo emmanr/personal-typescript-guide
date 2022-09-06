@@ -180,9 +180,6 @@ const logNumber = (i: number): void => {};
 
 </details>
 
-<br/>
-<br/>
-
 ## Type Inference
 
 <div align="center">
@@ -203,6 +200,9 @@ age = 'something'; // will have an error -- Type "string" is not assignable to t
 If Typescript can not determine the type of our variable or function, the type will become `any`.
 
 > Must avoid variables with type `any` at all costs
+
+<br/>
+<br/>
 
 ## When to use Type Annotations
 
