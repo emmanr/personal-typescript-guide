@@ -211,8 +211,14 @@ If Typescript can not determine the type of our variable or function, the type w
   const coordinates = JSON.parse(json);
   console.log(coordinates); // {x: 10, y: 20}
 
-  coordinates.somethingsomething; // will not cause an error, because this variable is in type "any"
+  coordinates.somethingsomething;
   ```
+
+  In above example, even though `somethingsomething` doesn't exist, typescript will not notify us.
+  Because typescript automatically assign type `any` to our coordinates.
+  
+  `any` means typescript doesn't know what type should be assign to it, it's like we're not using typescript in here.
+  since we are using typescript, we should avoid the type `any`. Because the purpose of typescript, is to assign a type to our variables or functions.
 
   > When assigning a type in a variable like string, numbers, etc.,
   > typescript help us see all available method or properties for that specific variables
