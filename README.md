@@ -17,7 +17,8 @@
 
   <img src="images/pokemon-types.jpeg" alt="Pokemon Types" width="830" height="196">
 
-  <p></p>
+ <br/>
+ <br/>
 </div>
 
 <!-- TABLE OF CONTENTS -->
