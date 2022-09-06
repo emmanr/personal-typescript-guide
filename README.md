@@ -522,15 +522,15 @@ This will allow us to make sure what type of value to pass in an array.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-<div align="center">
-  <img src="images/type-interface.png" alt="Type Interface">
-</div>
-
 ## Interfaces
 
 Creating a new custom type that we will define, just the same way that we have a string, numbers, etc.
 
 A new type that describe's the property names and value types of an object.
+
+<div align="center">
+  <img src="images/type-interface.png" alt="Type Interface" width="830" height="256">
+</div>
 
 ###### Examples:
 
