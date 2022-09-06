@@ -7,19 +7,15 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Typescript Documentation</h3>
+  <h3>Typescript Documentation</h3>
 
-  <p align="center">
-    Typescript is Javascript, it adds static typing to Javascript.
-  </p>
+  Typescript is Javascript, it adds static typing to Javascript.
 
-  <p align="center">
-    Typescript need a compiler to run on top of Javascript.
-  </p>
+  Typescript need a compiler to run on top of Javascript.
 
-  <p align="center">
-    Typescript help us avoid assigning different values in our variable or functions, and suggests what type of variable we can use, it also help us see any property available for our variables.
-  </p>
+  Typescript help us avoid assigning different values in our variable or functions, and suggests what type of variable we can use, it also help us see any property available for our variables.
+
+  <img src="images/pokemon-types.jpeg" alt="Pokemon Types">
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -216,7 +212,7 @@ If Typescript can not determine the type of our variable or function, the type w
 
   In above example, even though `somethingsomething` doesn't exist, typescript will not notify us.
   Because typescript automatically assign type `any` to our coordinates.
-  
+
   `any` means typescript doesn't know what type should be assign to it, it's like we're not using typescript in here.
   since we are using typescript, we should avoid the type `any`. Because the purpose of typescript, is to assign a type to our variables or functions.
 
