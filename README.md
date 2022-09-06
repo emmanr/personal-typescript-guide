@@ -15,7 +15,9 @@
 
   Typescript help us avoid assigning different values in our variable or functions, and suggests what type of variable we can use, it also help us see any property available for our variables.
 
-  <img src="images/pokemon-types.jpeg" alt="Pokemon Types">
+  <img src="images/pokemon-types.jpeg" alt="Pokemon Types" width="830" height="196">
+
+  <p></p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
