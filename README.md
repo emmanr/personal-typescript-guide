@@ -309,7 +309,6 @@ Code we add to tell Typescript what type of arguments a function will receive an
 
     // return undefined;
     // return null;
-    // return 'something';
   }
 
   const throwError = (message: string): never => {
@@ -319,7 +318,9 @@ Code we add to tell Typescript what type of arguments a function will receive an
 
 For difference between `void` and `never`:
 
-Void - it returns void (only null or undefined)
+Void - it returns void which is undefined
+
+> The intent of void is that a function's return value will not be observed.
 
 Never - it never returns anything
 
