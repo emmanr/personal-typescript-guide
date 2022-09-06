@@ -525,4 +525,38 @@ Creating a new custom type that we will define, just the same way that we have a
 
 A new type that describe's the property names and value types of an object.
 
+###### Examples:
+
+```typescript
+const oldCivic = {
+  name: 'civic',
+  year: 2000,
+  broken: false,
+};
+
+const printVehicle = (vehicle: {
+  name: string;
+  year: number;
+  broken: boolean;
+}): void => {
+  console.log(`Name: ${vehicle.name}`);
+  console.log(`Year: ${vehicle.year}`);
+  console.log(`Broken: ${vehicle.broken}`);
+};
+
+printVehicle(oldCivic);
+```
+
+In our example above, imagine if we have long list of keys, example a user with all it's detail.
+
+We will be creating a long list of notation. Something like:
+
+```
+(vehicle: {
+  name: string;
+  year: number;
+  broken: boolean;
+})
+```
+
 <p align="right">(<a href="#top">back to top</a>)</p>
