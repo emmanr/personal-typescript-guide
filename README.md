@@ -458,7 +458,8 @@ TS can prevent us from adding incompatible values to the array.
 ```typescript
 const carMakers = ['ford', 'toyota', 'honda']; // string
 
-carMakers.push(200); // Typescript will give us an error that carMakers array only accept's string
+carMakers.push(200);
+// Typescript will give us an error that carMakers array only accept's string
 ```
 
 Can get help with map, forEach, reduce function by suggesting properties or method for specific `type`
