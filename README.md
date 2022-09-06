@@ -289,8 +289,35 @@ If Typescript can not determine the type of our variable or function, the type w
 
 Code we add to tell Typescript what type of arguments a function will receive and what type of values it will return.
 
+###### Type annotations example:
+
+```typescript
+  const add = (a: number, b: number): number => {
+    return a + b;
+  }
+```
+
 ### Type Inference for Functions
 
 Typescript tries to figure out what type of value a function will return.
+
+###### Type inference example:
+
+```typescript
+  const add = (a: number, b: number) => {
+    return a + b;
+  } // type will automatically be a number
+
+  const subtract = (a: number, b: number) => {
+    console.log(a - b);
+  } // type will automatically be a void (no return = void)
+```
+
+Typescript will automatically assign a return `type` base in what we return. 
+
+If we omit a return, then the type will be `void`.
+
+> For add function, since we return a number, the type will be a number.
+> For subtract function, the type will be void since we only log to the console the result, and we did not return anything.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
