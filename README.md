@@ -33,6 +33,7 @@
     <li><a href="#destructuring-with-annotations">Destructuring with Annotations</a></li>
     <li><a href="#typed-arrays">Typed Arrays</a></li>
     <li><a href="#tuples-in-typescript">Tuples in Typescript</a></li>
+    <li><a href="#interfaces">Interfaces</a></li>
   </ol>
 </details>
 
@@ -504,7 +505,9 @@ const pepsi: [string, boolean, number] = ['brown', true, 40];
 
 // or with Alias
 type Drink = [string, boolean, number];
+
 const coke: Drink = ['brown', true, 40];
+const orange: Drink = ['orange', false, 50];
 
 coke[0] = 22;
 // Typescript will throw an error - saying the first element[0] should be a string
@@ -513,5 +516,13 @@ coke[0] = 22;
 
 This will allow us to make sure what type of value to pass in an array.
 
+<br/>
+<br/>
+
+## Interfaces
+
+Creating a new custom type that we will define, just the same way that we have a string, numbers, etc.
+
+A new type that describe's the property names and value types of an object.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
