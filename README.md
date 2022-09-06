@@ -469,6 +469,7 @@ const carMakers = ['ford', 'toyota', 'honda']; // string
 
 carMakers.map((car: string): string => {
   return car.toLowerCase();
+  // when you type car. ~ typescript will then suggest some helpful properties like toLowerCase()
 });
 ```
 
