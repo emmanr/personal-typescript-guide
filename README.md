@@ -599,7 +599,7 @@ printVehicle(oldToyota);
 // we will get an error that says "'broken' does not exist on type 'Vehicle'"
 ```
 
-By doing the above example, `printVehicle` function should meet the specification provided by the `Vehicle` type, by passing all necessary key-values and follow the types given.
+By doing the above example, `printVehicle` function should meet the specification provided by the `Vehicle` type, it must accept an object with a <b>name as a string</b>, <b>year as a number</b>, <b>broken as a boolean</b>.
 
 #### Naming of Interface
 
