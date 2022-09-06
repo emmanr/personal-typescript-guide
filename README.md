@@ -489,5 +489,29 @@ carMakers.map((car: string): string => {
 
 ## Tuples in Typescript
 
+Array-like structure where each element represents some property of a record.
+
+```typescript
+// example we wanna create a tuple same as this object:
+const drink = {
+  color: 'brown',
+  carbonated: true,
+  sugar: 40
+}
+
+// now in Tuples
+const pepsi: [string, boolean, number] = ['brown', true, 40];
+
+// or with Alias
+type Drink = [string, boolean, number];
+const coke: Drink = ['brown', true, 40];
+
+coke[0] = 22;
+// Typescript will throw an error - saying the first element[0] should be a string
+// we can only change the value base on the type we give in our Tuple
+```
+
+This will allow us to make sure what type of value to pass in an array.
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
