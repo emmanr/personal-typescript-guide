@@ -311,16 +311,20 @@ Typescript tries to figure out what type of value a function will return.
   const subtract = (a: number, b: number) => {
     console.log(a - b);
   } // type will automatically be a void (no return = void)
+
+  const multiply = (a, b) => {
+    return a * b;
+  } // type will automatically be a number
+
+  const addString = (a, b) => {
+    return a + b;
+  } // type will automatically be any
 ```
 
-Typescript will automatically assign a return `type` base in what we return. 
+Typescript will automatically assign a return `type` base in what we return.
 
-If we omit a return, then the type will be `void`.
+If we omit the return, then the type will be `void`.
 
-> For add function, since we return a number, the type will be a number.
-
-> For subtract function, the type will be void since we only log to the console the result, and we did not return anything.
-
-> Typescript will not automatically assign or do inference in argument, instead it will become type `any`
+Typescript won't do inference in a function argument, instead it will assign type `any`.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
