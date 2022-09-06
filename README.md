@@ -318,7 +318,9 @@ Typescript will automatically assign a return `type` base in what we return.
 If we omit a return, then the type will be `void`.
 
 > For add function, since we return a number, the type will be a number.
+
 > For subtract function, the type will be void since we only log to the console the result, and we did not return anything.
+
 > Typescript will not automatically assign or do inference in argument, instead it will become type `any`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
