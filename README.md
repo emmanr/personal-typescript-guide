@@ -30,6 +30,7 @@
     <li><a href="#type-inference">Type Inference</a></li>
     <li><a href="#when-to-use-type-annotations">When to use Type Annotations</a></li>
     <li><a href="#functions-annotation-and-inference">Functions Annotation and Inference</a></li>
+    <li><a href="#destructuring-with-annotations">Destructuring with Annotations</a></li>
   </ol>
 </details>
 
@@ -358,5 +359,25 @@ Typescript will automatically assign a return `type` base in what we return.
 If we omit the return, then the type will be `void`.
 
 Typescript won't do inference in a function argument, instead it will assign type `any` for the argument.
+
+<br/>
+<br/>
+
+## Destructuring with Annotations
+
+```typescript
+const currentWeather = {
+  date: new Date(),
+  weather: 'Sunny'
+}
+
+const logWeather = ({date, weather}: { date: Date, weather: string}): void => {
+  console.log(date);
+  console.log(weather);
+}
+
+logWeather(currentWeather);
+
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
