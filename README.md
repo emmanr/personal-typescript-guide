@@ -587,7 +587,7 @@ const printVehicle = (vehicle: Vehicle): void => {
 
 > Should follow a naming convention for Interfaces, most likely you will discussed it with your teams to avoid clashing of names. There is no standard for the naming conventions by the language itself.
 
-> Make it Generic, CamelCase
+> Make it Generic, Use PascalCase for interface names.
 
 > Should not have I or Interface in the name or any other way of identifying it as an interface.
 
