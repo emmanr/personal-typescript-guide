@@ -29,6 +29,7 @@
     <li><a href="#type-annotations">Type Annotations</a></li>
     <li><a href="#type-inference">Type Inference</a></li>
     <li><a href="#when-to-use-type-annotations">When to use Type Annotations</a></li>
+    <li><a href="#functions-annotation-and-inference">Functions Annotation and Inference</a></li>
   </ol>
 </details>
 
@@ -137,7 +138,7 @@ const logAndReturnNumberInferenceArgument = (i: number): number => {
 ```
 
 <details>
-  <summary><h5>:question: Why do we have to write "i: number" in the function declaration. Why 2 times the same?</h5></summary>
+  <summary><h5>:interrobang: Why do we have to write "i: number" in the function declaration. Why 2 times the same?</h5></summary>
 
 In terms of why you put `i: number` twice, it's because it's not the same i each time. The second is the actual argument or parameter to the function. The first is a type annotation of what type of argument will be passed as a parameter.
 
@@ -271,5 +272,15 @@ If Typescript can not determine the type of our variable or function, the type w
     }
   ```
 </details>
+
+## Functions Annotation and Inference
+
+### Type Annotations for Functions
+
+Code we add to tell Typescript what type of arguments a function will receive and what type of values it will return.
+
+### Type Inference for Functions
+
+Typescript tries to figure out what type of value a function will return.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
