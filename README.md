@@ -34,7 +34,6 @@
     <li><a href="#typed-arrays">Typed Arrays</a></li>
     <li><a href="#tuples-in-typescript">Tuples in Typescript</a></li>
     <li><a href="#interfaces">Interfaces</a></li>
-    <li><a href="#functions-in-interfaces">Functions in Interfaces</a></li>
   </ol>
 </details>
 
