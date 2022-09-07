@@ -34,6 +34,7 @@
     <li><a href="#typed-arrays">Typed Arrays</a></li>
     <li><a href="#tuples-in-typescript">Tuples in Typescript</a></li>
     <li><a href="#interfaces">Interfaces</a></li>
+    <li><a href="#functions-in-interfaces">Functions in Interfaces</a></li>
   </ol>
 </details>
 
@@ -575,18 +576,20 @@ interface Vehicle {
   name: string;
   year: number;
   broken: boolean;
+  summary(): string; // a summary function that returns a string
 }
 
 const oldCivic = {
   name: 'civic',
   year: 2000,
   broken: false,
+  summary(): string {
+    return `Name: ${this.name}, Year: ${this.year}`;
+  },
 };
 
 const printVehicle = (vehicle: Vehicle): void => {
-  console.log(`Name: ${vehicle.name}`);
-  console.log(`Year: ${vehicle.year}`);
-  console.log(`Broken: ${vehicle.broken}`);
+  console.log(vehicle.summary());
 };
 
 printVehicle(oldCivic);
@@ -596,6 +599,9 @@ const oldToyota = {
   name: 'corolla',
   year: 1997,
   // broken: false,
+  summary(): string {
+    return 'Something';
+  },
 };
 
 printVehicle(oldToyota);
@@ -614,4 +620,13 @@ With the above example, `printVehicle` function should meet the specification pr
 
 > Should not have I or Interface in the name or any other way of identifying it as an interface.
 
+<br/>
+
+ #### General Strategy for Reusable code in TS
+
+Create functions that accept arguments that are typed with interfaces.
+
+Object/classes can decide to 'implement' a given interface to work with a function.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
+
