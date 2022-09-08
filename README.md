@@ -636,5 +636,5 @@ ____________________
 
 [Udemy course link](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/)
 
-[ReadMe template link](https://github.com/emmanr/Best-README-Template)
+[ReadMe template link](https://github.com/othneildrew/Best-README-Template)
   
