@@ -200,7 +200,7 @@ Inference is that Typescript will automatically assign a type to our variable.
 
 ```javascript
 let pet = 'Dog'; // Typescript will automatically assign it with "string" type
-let age = '30'; // automatically type number
+let age = 30; // automatically type number
 
 age = 'something'; // will have an error -- Type "string" is not assignable to type "number"
 ```
