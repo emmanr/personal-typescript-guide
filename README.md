@@ -205,9 +205,9 @@ let age = 30; // automatically type number
 age = 'something'; // will have an error -- Type "string" is not assignable to type "number"
 ```
 
-If Typescript can not determine the type of our variable or function, the type will become `any`.
+If Typescript can not determine the type of our variable or the return value from a function, the type will become `any`.
 
-> Must avoid variables with type `any` at all costs
+> Must avoid variables with type `any` at all costs, since we are using TS to assign type for our values.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
