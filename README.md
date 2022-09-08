@@ -514,7 +514,9 @@ coke[0] = 22;
 // we can only change the value base on the type we give in our Tuple
 ```
 
-This will allow us to make sure what type of value to pass in an array.
+TypeScript tuples are like arrays with a fixed number of elements. They provide us with a fixed size container that can store values of multiple types, where the order and structure are very important. This data type is best used when we know exactly how many types we want to allow in an array.
+
+[reference link](https://blog.logrocket.com/use-cases-named-tuples-typescript/)
 
 <br/>
 <br/>
