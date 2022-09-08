@@ -7,7 +7,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3>Typescript Documentation</h3>
+  <h3>Personal Typescript Guide</h3>
 
   Typescript is Javascript, it adds static typing to Javascript.
 
