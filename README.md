@@ -631,8 +631,9 @@ Object/classes can decide to 'implement' a given interface to work with a functi
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Resources
+##### Resources
 ____________________
 
-[^1]: Udemy course [link] (https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/)
-[^2]: ReadMe template [link] (https://github.com/emmanr/Best-README-Template)
+- Udemy course [link] (https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/)
+
+- ReadMe template [link] (https://github.com/emmanr/Best-README-Template)
