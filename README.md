@@ -634,6 +634,7 @@ Object/classes can decide to 'implement' a given interface to work with a functi
 ##### Resources
 ____________________
 
-- Udemy course [link] (https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/)
+[Udemy course link](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/)
 
-- ReadMe template [link] (https://github.com/emmanr/Best-README-Template)
+[ReadMe template link](https://github.com/emmanr/Best-README-Template)
+  
